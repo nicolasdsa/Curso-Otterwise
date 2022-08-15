@@ -226,7 +226,6 @@ function CPF(cpf){
 }
 
 function telefone(tel){
-  console.log(tel);
   return `(${tel.slice(0,2)})${tel.slice(2,7)}-${tel.slice(7,11)}`
 }
 
