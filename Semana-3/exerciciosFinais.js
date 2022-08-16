@@ -1,15 +1,31 @@
-// Calculadora atraves de uma função, foi utilizada um arrow function junto ao um operador switch para uma melhor legibilidade e organização do código.
+// Aqui fazemos uma calculadora com uso um pouco mais aprofundado a respeito de função, que se trata de funções como retorno de funções. Como pedido no exemplo do exercício.
 
-const calculadora = (operation, num1, num2) => {
+const calculadora = (operation) => {
     switch(operation){
         case 'soma':
-            return console.log(num1 + num2);
+            return function (num1) {
+                return function (num2) {
+                    return num1 + num2;
+                }
+            }
         case 'subtrai':
-            return console.log(num1 - num2);
+            return function (num1) {
+                return function (num2) {
+                    return num1 - num2;
+                }
+            }
         case 'divide':
-            return console.log(num1 / num2);
+            return function (num1) {
+                return function (num2) {
+                    return num1 / num2;
+                }
+            }
         case 'multiplica':
-            return console.log(num1 * num2);
+            return function (num1) {
+                return function (num2) {
+                    return num1 * num2;
+                }
+            }
         default:
             return console.log('Operação Invalida');
     }
@@ -17,7 +33,7 @@ const calculadora = (operation, num1, num2) => {
 
 
 console.log('Exercicio 1:');
-calculadora('soma', 3, 5);
+console.log(calculadora('soma')(3)(5));
 
 
 // Verificar se é maior de idade, tentou se utilizar a maioria dos conceitos aprendidos na semana, como arrow function, operador ternario e Destructing

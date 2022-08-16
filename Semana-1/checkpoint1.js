@@ -22,7 +22,7 @@ console.log(`Exercicio 1:\nNome Completo: ${nome} ${sobrenome}\nIdade: ${idade}\
 
 /* Exercicio 2 */
 
-
+/* Utilizando spread soma um número indefinidos de numeros. */
 function soma(...numeros){
   let resultado = 0;  
   for(const numero of numeros) {

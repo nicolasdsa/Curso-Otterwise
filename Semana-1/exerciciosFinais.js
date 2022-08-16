@@ -1,4 +1,5 @@
 /* Exercicio 1 */
+/* Retorna-se um boolean apenas quando é verdadeiro como é exigido no exercicio, quando é falso não é exigido */
 console.log('Exercicio 1:');
 function verifica(number){
   if(number % 2 == 0){
@@ -13,7 +14,7 @@ const parouImpar = verifica(2);
 console.log(parouImpar);
 
 console.log('---------------------\nExercicio 2:');
-
+/* Number isInteger foi utilizado para evitar casos de inserções de strings sem querer pelo o usuario */
 function categoria(idade){
   if(!Number.isInteger(idade)){
     return console.log('Idade é apenas numeros inteiros.Tente outro número.');

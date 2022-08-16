@@ -53,18 +53,6 @@ const exercise5 = array => {
 console.log(exercise5([1, -7, -23, 22, -19, 13, 10, -8, 52, -153, -127]));
 
 console.log('-------------------------');
-console.log('Exercicio 6:');
-
-/*const exercise6 = (array, number) => {
-  const numberConst = number
-  return array.map(item => {
-    return item * numberConst; 
-  })
-}
-
-console.log(exercise6([1, 8, 6, 13, 7, 9, 15, 22, 356, 4, 3]));*/
-
-console.log('-------------------------');
 console.log('Exercicio 7:');
 
 const exercise7 = array => {
@@ -88,6 +76,3 @@ const exercise8 = (array, nome) => {
 }
 
 exercise8(['Juliana', 'Pedro', 'Regina', 'João', 'Patrícia', 'Gabriel', 'Carlos', 'Carla'],'Carla') ? console.log(`O nome existe no Array.`) : console.log(`O nome não existe no Array.`);
-
-console.log('-------------------------');
-console.log('Exercicio 9:');

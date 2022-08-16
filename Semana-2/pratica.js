@@ -234,4 +234,4 @@ const usuario = {nome: 'Cláudio  da silva figueiredo ', cpf: '47187999887', tel
 const newCPF = CPF(usuario.cpf);
 const newTel = telefone(usuario.telefone);
 
-console.log(`${usuario.nome}\n${newCPF}\n${newTel}`);
+console.log(`${usuario.nome}\n${newCPF}\n${newTel}`); /* */
