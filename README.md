@@ -40,4 +40,12 @@ Nos exercícios obrigatórios foram adicionados comentários para facilitar o en
 <li>Métodos de Array</li>
 </ul>
 
-## :clock330: Semana 5
+## :white_check_mark: Semana 5
+<ul>
+<li>JSON</li>
+<li>Gerenciador de Pacotes</li>
+<li>API</li>
+</ul>
+
+## :clock330: Semana 6
+
