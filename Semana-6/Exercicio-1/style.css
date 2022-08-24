@@ -1,0 +1,59 @@
+ul {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav {
+  display: grid;
+  align-items: center;
+  background-color: #353535;
+  min-height: 50px;
+  color: white;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20%;
+  flex: 0 1 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+  min-height: 50px;
+  color: white;
+}
+
+/* skills */
+
+.skills ul li {
+  padding: 10px 0px;
+}
+
+.soft {
+  margin-right: 150px;
+}
+
+.hard {
+  margin-left: 150px;
+}
