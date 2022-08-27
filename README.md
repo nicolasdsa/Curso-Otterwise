@@ -47,5 +47,10 @@ Nos exercícios obrigatórios foram adicionados comentários para facilitar o en
 <li>API</li>
 </ul>
 
-## :clock330: Semana 6
+## :white_check_mark: Semana 6
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Flexbox</li>
+</ul>
 
