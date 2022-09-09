@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  margin-left: 142px;
+  margin-right: 158px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  nav {
+    display: flex;
+    align-self: center;
+
+    ul {
+      display: flex;
+
+      li {
+        padding-left: 30px;
+      }
+    }
+  }
+}
