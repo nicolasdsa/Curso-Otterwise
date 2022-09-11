@@ -1,0 +1,36 @@
+footer{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 142px;
+    margin-top: 173px;
+
+    .links{
+        display: flex;
+        margin-right: 40.4%;
+
+        h2{
+            margin-right: 142px;
+        }
+    
+        nav{
+            flex: 1;
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+    
+            li{
+                flex: 1;
+            }
+          }
+    }
+
+    p{ 
+        margin-top: 77px;
+        border-top: 1px solid #26292D;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+}
