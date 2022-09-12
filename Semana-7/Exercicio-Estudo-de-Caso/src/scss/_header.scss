@@ -12,7 +12,7 @@ header {
   }
 
   nav {
-    display: flex;
+    display: none;
     align-self: center;
 
     ul {
@@ -21,6 +21,20 @@ header {
       li {
         padding-left: 30px;
       }
+    }
+  }
+
+  .hamburguer{
+    display: block;
+  }
+
+  @media(min-width: 768px){
+    nav {
+      display: flex;
+    }
+
+    .hamburguer{
+      display: none;
     }
   }
 }
