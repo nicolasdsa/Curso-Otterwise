@@ -1,0 +1,63 @@
+.information {
+    display: flex;
+    margin-top: 190px;
+    //margin-right: 16.5%;
+    //margin-left: 16.5%;
+    margin-right: 4.5%;
+    margin-left: 4.5%;
+    background-color: $backgroundCard;
+    color: white;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+
+    div{
+        flex: 1;
+        font-size: 16px;
+        margin-left: 0px;
+
+        h2{
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+
+        p{
+            line-height: 28px;
+        }
+
+        a{
+            display: inline-block;
+            background-color: transparent;
+            padding: 16px 20px;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            margin-top: 16px;
+
+            img {
+                margin-left: 12px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+
+        &{
+            flex-direction: row;
+        }
+
+        div{
+            margin-left: 32px;
+
+            h2{
+                font-weight: 500;
+                font-size: 48px;
+                margin-top: 0px;
+                margin-bottom: 32px;
+            }
+        }
+
+      }
+}

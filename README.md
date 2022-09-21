@@ -1,4 +1,4 @@
-# Processo seletivo para hut8
+# Curso-Otterwise
 
 <p>Quatro semanas de treinamento utilizando o curso da Otterwise com objetivo de avaliação de exercícios e checkpoints.</p>
 
