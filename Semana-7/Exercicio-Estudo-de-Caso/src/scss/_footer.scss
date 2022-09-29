@@ -1,22 +1,30 @@
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 95px;
-  //margin-left: 142px;
-  //margin-top: 173px;
+  margin-top: 64px;
+  margin-right: 4.5%;
+  margin-left: 4.5%;
 
   .links {
     display: flex;
     flex-direction: column;
-    //margin-right: 40.4%;
 
     h2 {
+      border-top: 1px solid #26292d;
       text-align: center;
+      padding-top: 32px;
       margin-bottom: 32px;
-      //margin-right: 142px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .list-mobile li:nth-child(odd) {
+      color: $colorMenu;
+      font-weight: 500;
     }
 
     nav {
+      display: none;
       flex: 1;
     }
 
@@ -25,20 +33,66 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      font-size: 16px;
 
+      &:first-child {
+        color: $colorMenu;
+      }
       li {
         flex: 1;
-        /**/
         padding-bottom: 25px;
       }
     }
   }
 
   p {
-    margin-top: 77px;
+    margin-top: 28px;
     border-top: 1px solid #26292d;
     padding-top: 16px;
     padding-bottom: 32px;
     text-align: center;
+    font-size: 12px;
+  }
+
+  @include md {
+    & {
+      margin-right: 9.9%;
+      margin-left: 9.9%;
+      margin-top: 109px;
+
+      .links {
+        padding-top: 64px;
+        flex-direction: row;
+        border-top: 1px solid #26292d;
+
+        h2 {
+          border-top: none;
+          padding-top: 0px;
+          margin-bottom: 0px;
+          margin-right: 9%;
+        }
+
+        nav {
+          display: block;
+        }
+        .list-mobile {
+          display: none;
+        }
+
+        ul {
+          flex-direction: row;
+          align-items: start;
+
+          li {
+            flex: 1;
+            padding-bottom: 25px;
+          }
+        }
+      }
+
+      p {
+        text-align: start;
+      }
+    }
   }
 }

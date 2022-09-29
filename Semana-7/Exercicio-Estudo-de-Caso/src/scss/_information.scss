@@ -1,15 +1,13 @@
 .information {
   display: flex;
-  margin-top: 190px;
-  //margin-right: 16.5%;
-  //margin-left: 16.5%;
+  margin-top: 124px;
   margin-right: 4.5%;
   margin-left: 4.5%;
   background-color: $backgroundCard;
   color: white;
   flex-direction: column;
   border-radius: 8px;
-  padding: 24px;
+  padding: 16px;
 
   div {
     flex: 1;
@@ -35,6 +33,7 @@
       border: 1px solid #ffffff;
       border-radius: 8px;
       margin-top: 16px;
+      font-weight: 500;
 
       img {
         margin-left: 12px;
@@ -43,9 +42,15 @@
     }
   }
 
+  @include lg {
+    flex-direction: row;
+  }
+
   @include md {
     & {
-      flex-direction: row;
+      margin-right: 16.5%;
+      margin-left: 16.5%;
+      padding: 24px;
     }
 
     div {
@@ -59,8 +64,8 @@
       }
     }
 
-    img {
-      margin-right: 20px;
+    .arrow {
+      margin-left: 15px;
     }
   }
 }
