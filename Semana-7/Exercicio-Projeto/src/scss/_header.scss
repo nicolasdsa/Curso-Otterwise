@@ -1,26 +1,54 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin-left: 142px;
-  margin-right: 158px;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
   margin-top: 18px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #26292d;
 
   h2 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   nav {
-    display: flex;
+    display: none;
     align-self: center;
 
     ul {
       display: flex;
 
       li {
-        padding-left: 30px;
+        margin-left: 30px;
+
+        &:first-child {
+          border-bottom: 3px solid $colorButton;
+        }
       }
+    }
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  @include md {
+    & {
+      margin-left: 142px;
+      margin-right: 158px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .hamburguer {
+      display: none;
     }
   }
 }

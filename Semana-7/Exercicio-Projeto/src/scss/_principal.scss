@@ -1,0 +1,84 @@
+.principal {
+  display: flex;
+  flex: 1;
+  margin-right: 14%;
+  margin-left: 14%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 40px;
+    padding-top: 72px;
+  }
+
+  span {
+    color: $colorButton;
+  }
+
+  button {
+    font-weight: 500;
+  }
+
+  .entrar {
+    padding: 16px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: $colorButton;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .baixar {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 18px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 16px;
+  }
+
+  .download {
+    position: relative;
+    top: 3px;
+    padding-right: 11px;
+  }
+
+  @include sm {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .baixar {
+      margin-top: 16px;
+      margin-left: 14px;
+      margin-right: 14px;
+    }
+  }
+
+  @include md {
+    & {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .baixar {
+      margin-top: 0px;
+    }
+
+    div {
+      flex-direction: row;
+    }
+  }
+}
