@@ -1,14 +1,14 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin-left: 142px;
-  margin-right: 158px;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
   margin-top: 18px;
   margin-bottom: 18px;
 
   h2 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   nav {
@@ -24,16 +24,25 @@ header {
     }
   }
 
-  .hamburguer{
+  .hamburguer {
     display: block;
   }
 
-  @media(min-width: 768px){
+  @include md {
+    & {
+      margin-left: 142px;
+      margin-right: 158px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
     nav {
       display: flex;
     }
 
-    .hamburguer{
+    .hamburguer {
       display: none;
     }
   }

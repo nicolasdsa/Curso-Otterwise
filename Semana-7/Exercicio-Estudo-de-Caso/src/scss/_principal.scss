@@ -1,62 +1,62 @@
 .principal {
+  display: flex;
+  flex: 1;
+  margin-right: 14%;
+  margin-left: 14%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 40px;
+    padding-top: 150px;
+  }
+
+  span {
+    color: $colorButton;
+  }
+
+  div {
     display: flex;
-    flex: 1;
-    margin-right: 33%;
-    margin-left: 33%;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-  
+  }
+
+  .entrar {
+    padding: 16px 20px;
+    border-radius: 5px;
+    background-color: $colorButton;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .baixar {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 16px;
+  }
+
+  .download {
+    position: relative;
+    top: 3px;
+    padding-right: 11px;
+  }
+
+  @include md {
+    & {
+      margin-right: 33%;
+      margin-left: 33%;
+    }
+
     h1 {
-      font-weight: 700;
       font-size: 60px;
-      padding-bottom: 40px;
-      padding-top: 150px;
-    }
-  
-    span {
-      color: $colorButton;
-    }
-
-    div{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .entrar{
-      padding: 16px 20px;
-      border-radius: 5px;
-      background-color: $colorButton;
-      color: $white;
-      font-size: 16px;
-      font-weight: 500;
-    }
-  
-    .baixar{
-      color: $white;
-      font-size: 16px;
-      font-weight: 500;
-      padding: 16px 20px;
-      border: 1px solid #FFFFFF;
-      border-radius: 5px;
-      background-color: transparent;
-      margin-top: 16px;
-    }
-
-    .download{
-      position: relative;
-      top: 3px;
-      padding-right: 11px;
-    }
-
-    @media(min-width: 768px){
-
-      .baixar{
-        margin-left: 24px;
-      }
-      div{
-        display: block;
-      }
-
     }
   }
+}
