@@ -30,6 +30,10 @@ $breakpoints: (
   outline: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   background-color: $backgroundBody;

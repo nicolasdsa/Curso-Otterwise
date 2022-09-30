@@ -4,9 +4,11 @@ $white: #ffffff;
 $colorMenu: #85bfd1;
 $colorButton: #5c62ec;
 
-@import "base";
-@import "header";
-@import "mainSection";
-@import "principal";
-@import "information";
-@import "footer";
+@import "./index/base";
+@import "./index/header";
+@import "./index/mainSection";
+@import "./index/principal";
+@import "./index/information";
+@import "./index/footer";
+@import "./sobre/cards";
+@import "./sobre/introduction";
