@@ -44,6 +44,14 @@
 
   @include lg {
     flex-direction: row;
+
+    div {
+      margin-left: 32px;
+
+      h2 {
+        margin-top: 0px;
+      }
+    }
   }
 
   @include md {
@@ -54,12 +62,9 @@
     }
 
     div {
-      margin-left: 32px;
-
       h2 {
         font-weight: 500;
         font-size: 48px;
-        margin-top: 0px;
         margin-bottom: 32px;
       }
     }

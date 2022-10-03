@@ -15,6 +15,7 @@
 
     div {
       margin-top: 24px;
+      margin-right: 0px;
       background-color: $backgroundCard;
       border-radius: 8px;
       padding: 24px 40px 16px 16px;
@@ -29,6 +30,58 @@
         font-size: 14px;
         font-weight: 400;
         padding-top: 10px;
+      }
+    }
+  }
+
+  @include lg {
+    .habilidades {
+      margin-bottom: 36px;
+      font-size: 34px;
+      margin-top: 128px;
+    }
+    .cards {
+      margin-left: 11.5%;
+      margin-right: 11.5%;
+
+      div {
+        flex: 1 0 300px;
+        padding: 30px 34px 24px 24px;
+
+        &:nth-child(odd) {
+          margin-right: 25px;
+        }
+
+        h2 {
+          font-size: 34px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include xl {
+    & {
+      .cards {
+        margin-left: 11.5%;
+        margin-right: 11.5%;
+
+        div:nth-child(odd) {
+          margin-right: 0px;
+        }
+
+        div:nth-child(2) {
+          margin-right: 25px;
+          margin-left: 25px;
+        }
+
+        div:nth-child(5) {
+          margin-right: 25px;
+          margin-left: 25px;
+        }
       }
     }
   }
