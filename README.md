@@ -54,3 +54,9 @@ Nos exercícios obrigatórios foram adicionados comentários para facilitar o en
 <li>Flexbox</li>
 </ul>
 
+## :white_check_mark: Semana 7
+<ul>
+<li>Responsividade</li>
+<li>SASS</li>
+</ul>
+
